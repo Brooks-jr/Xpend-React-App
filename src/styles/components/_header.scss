@@ -1,0 +1,34 @@
+.header {
+    background: $secondary;
+}
+
+.header__content {
+    padding: $small 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__link {
+    text-decoration: none;
+    &-text {
+        color: $white;
+        font-size: $xlarge;
+        font-weight: 300;
+        margin: 0;
+        span {
+            background: -webkit-linear-gradient($logo-blue, $primary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+// .logout-button {
+//     color: $primary;
+//     background: transparent;
+//     border: none;
+//     font-size: $medium;
+//     font-weight: 500;
+// }

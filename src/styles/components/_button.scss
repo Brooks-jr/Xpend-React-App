@@ -1,0 +1,26 @@
+.button {
+    display: inline-block;
+    margin: $medium 0;
+    padding: $medium;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1;
+    color: $white;
+    background: -webkit-linear-gradient(rgb(255, 68, 99), $primary);
+    border: none;
+    text-decoration: none;
+}
+
+.button--hover {
+    &:hover {
+        background: $white;
+        color: $secondary;
+    }
+}
+
+.button--link {
+    background: transparent;
+    &:hover {
+        color: $primary;
+    }
+}

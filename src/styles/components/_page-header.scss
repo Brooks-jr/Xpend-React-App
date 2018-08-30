@@ -1,0 +1,19 @@
+.page-header {
+    background: rgba(0, 36, 78, .5);
+    padding: $large 0;
+    margin-bottom: $large;
+}
+
+.page-header__link {
+    margin-top: $medium;
+}
+
+.page-header__text {
+    color: $white;
+    font-weight: 300;
+    margin: 0;
+    span {
+        color: $primary;
+        font-weight: 700;
+    }
+}
