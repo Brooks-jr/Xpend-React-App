@@ -1,0 +1,73 @@
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: $medium;
+    flex-direction: column;
+    @media (min-width: $desktop-bp) {
+        flex-direction: row;
+        margin-bottom: $large;
+    }
+}
+
+.input-group__item {
+    margin-bottom: $small;
+    @media (min-width: $desktop-bp) {
+        margin: 0 $small 0 0;
+    }
+}
+
+.text-input {
+    font-size: $medium;
+    font-weight: 300;
+    border: 1px solid $primary;
+    height: 46px;
+    padding: $small;
+}
+
+.select {
+    @extend .text-input;
+}
+
+.textarea {
+    @extend .text-input;
+    height: 10rem;
+}
+
+
+
+
+.DateRangePickerInput_arrow.DateRangePickerInput_arrow_1 {
+    margin-left: 21px;
+}
+
+.DateInput_input.DateInput_input_1.DateInput_input__focused.DateInput_input__focused_2 {
+    border-bottom: 2px solid $primary;
+}
+
+.CalendarDay__selected,
+.CalendarDay__selected:active,
+.CalendarDay__selected:hover,
+.CalendarDay__selected_span:hover,
+.CalendarDay__default:hover {
+    color: $white !important;
+    background: $primary !important;
+    border: 1px solid $primary !important;
+}
+
+.CalendarDay__selected_span {
+    color: $white !important;
+    background: $secondary !important;
+    border: 1px solid $secondary !important;
+}
+
+.DateRangePickerInput__withBorder,
+.SingleDatePickerInput__withBorder {
+    border-radius: 0 !important;
+    border-color: $primary !important;
+}
+
+.SingleDatePickerInput,
+.DateInput {
+    width: 100% !important;
+}
+

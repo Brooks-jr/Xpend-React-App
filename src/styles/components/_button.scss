@@ -6,12 +6,12 @@
     font-weight: 500;
     line-height: 1;
     color: $white;
-    background: -webkit-linear-gradient(rgb(255, 68, 99), $primary);
+    background: -webkit-linear-gradient(rgb(255, 68, 130), $primary);
     border: none;
     text-decoration: none;
 }
 
-.button--hover {
+.button__hover {
     &:hover {
         background: $white;
         color: $secondary;
