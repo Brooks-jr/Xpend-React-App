@@ -1,38 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render expense list message when no expenses 1`] = `
-<div>
-  <p>
-    No Expenses Added Yet.
-  </p>
+<div
+  className="container"
+>
+  <div
+    className="list-header"
+  >
+    <div>
+      Expense
+    </div>
+    <div>
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-wrap"
+  >
+    <div
+      className="list-item list--message"
+    >
+      <h3>
+        No Expenses Added Yet.
+      </h3>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`should render expense list with given expenses 1`] = `
-<div>
-  <ExpenseListItem
-    amount={195}
-    createdAt={0}
-    description="Candy"
-    id="1"
-    key="1"
-    note=""
-  />
-  <ExpenseListItem
-    amount={395}
-    createdAt={-345600000}
-    description="Drink"
-    id="2"
-    key="2"
-    note=""
-  />
-  <ExpenseListItem
-    amount={295}
-    createdAt={345600000}
-    description="Chips"
-    id="3"
-    key="3"
-    note=""
-  />
+<div
+  className="container"
+>
+  <div
+    className="list-header"
+  >
+    <div>
+      Expense
+    </div>
+    <div>
+      Amount
+    </div>
+  </div>
+  <div
+    className="list-wrap"
+  >
+    <ExpenseListItem
+      amount={195}
+      createdAt={0}
+      description="Candy"
+      id="1"
+      key="1"
+      note=""
+    />
+    <ExpenseListItem
+      amount={395}
+      createdAt={-345600000}
+      description="Drink"
+      id="2"
+      key="2"
+      note=""
+    />
+    <ExpenseListItem
+      amount={295}
+      createdAt={345600000}
+      description="Chips"
+      id="3"
+      key="3"
+      note=""
+    />
+  </div>
 </div>
 `;
