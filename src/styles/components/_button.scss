@@ -6,21 +6,37 @@
     font-weight: 500;
     line-height: 1;
     color: $white;
-    background: -webkit-linear-gradient(rgb(255, 68, 130), $primary);
-    border: none;
+    background-image: linear-gradient(to bottom right, $tertiary, $primary);
+    background-image: -webkit-linear-gradient(to bottom right, $tertiary, $primary);
+    border: 2px solid transparent;
     text-decoration: none;
+    border-radius: 100px;
 }
 
 .button__hover {
     &:hover {
-        background: $white;
-        color: $secondary;
+        background: $secondary;
+        color: $white;
+        border: 2px solid $secondary;
+        transition: background border .3s ease;
     }
+}
+
+.button--dark {
+    background: $secondary;
+    border: 2px solid $secondary;
+}
+
+.button--outline {
+    color: $primary;
+    background: none;
+    border: 2px solid $primary;
 }
 
 .button--link {
     background: transparent;
     &:hover {
         color: $primary;
+        transition: color .2s ease;
     }
 }

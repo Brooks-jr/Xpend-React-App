@@ -1,5 +1,5 @@
 .header {
-    background: $secondary;
+    background: fade-out( black, .3);
 }
 
 .header__content {
@@ -17,6 +17,7 @@
         font-weight: 300;
         margin: 0;
         span {
+            background: linear-gradient($logo-blue, $primary);
             background: -webkit-linear-gradient($logo-blue, $primary);
             background-clip: text;
             -webkit-background-clip: text;
@@ -24,11 +25,3 @@
         }
     }
 }
-
-// .logout-button {
-//     color: $primary;
-//     background: transparent;
-//     border: none;
-//     font-size: $medium;
-//     font-weight: 500;
-// }

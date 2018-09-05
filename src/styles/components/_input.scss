@@ -6,6 +6,7 @@
     @media (min-width: $desktop-bp) {
         flex-direction: row;
         margin-bottom: $large;
+        justify-content: space-between;
     }
 }
 
@@ -66,8 +67,7 @@
     border-color: $primary !important;
 }
 
-.SingleDatePickerInput,
-.DateInput {
+.SingleDatePickerInput {
     width: 100% !important;
 }
 

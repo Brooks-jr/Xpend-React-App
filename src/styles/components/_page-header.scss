@@ -1,5 +1,5 @@
 .page-header {
-    background: rgba(0, 36, 78, .5);
+    // background: rgba(0, 36, 78, .5);
     padding: $large 0;
     margin-bottom: $large;
 }
@@ -13,7 +13,11 @@
     font-weight: 300;
     margin: 0;
     span {
-        color: $primary;
+        background: linear-gradient(to bottom right, $tertiary, $primary);
+        background: -webkit-linear-gradient(to bottom right, $tertiary, $primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-weight: 700;
     }
 }
